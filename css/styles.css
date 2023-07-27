@@ -1,0 +1,21 @@
+:root{
+	--blue: #2A7AE4;
+	--black: #464646;
+	--lightblue: #EAF2FD;
+	--gray: #F5F5F5;
+	--white: #FFFF;
+	--label: #A2A2A2;
+}
+
+* {
+	box-sizing: border-box;	
+}
+
+body, input, textarea, button{
+	font-family: 'Raleway', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: var(--black);
+}

@@ -1,0 +1,123 @@
+.header{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	/* margin: 0 16px; */
+	padding: 16px 0;
+	align-items: center;
+	max-width: 1136px;
+}
+
+/* LOGO DIV */
+
+.logo__div{
+	display: flex;
+	margin-left: 16px;
+	width: 55%;
+}
+
+
+.logo__img{
+	width: 120px;
+	/* height: 30px; */
+}
+
+@media screen and (max-width:280px) {
+	.logo__img{
+		width: 80px;
+	}
+}
+
+
+@media screen and (min-width:768px) {
+	.logo__img{
+		width: 130px;
+	}
+}
+
+
+@media screen and (min-width:1440px) {
+	.logo__img{
+		width: 176px;
+	}
+}
+
+.search__input, .search__lupa{
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.search__input{
+		display: block;
+		width: 100%;
+		margin-left: 2rem;
+		padding: 1rem;
+		background-color: #F5F5F5;
+		border: none;
+		border-radius: 5rem;
+		font-size: 16px;
+		outline: none;
+	}
+
+	.search__lupa{
+		display: block;
+		position: relative;
+		left: -35px;
+	}
+}
+
+
+
+/* LOGIN DIV */
+
+
+.login__button{
+	border: 1px solid var(--blue);
+	width: 133px;
+	height: 40px;
+	background-color: white;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 280px){
+	.login__button{
+		width: 100px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.login__button{
+		width: 166px;
+		margin-right: 0.5rem;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	.login__button{
+		width: 182px;
+	}
+}
+
+.login__button a{
+	text-decoration: none;
+	color: var(--blue);
+}
+
+.search__div{
+	margin: 0 16px;
+}
+
+
+
+@media screen and (min-width:768px) {
+	.search__div{
+		display: none;
+	}
+}
+
+.search__img-mobile{
+	height: 24px;
+}
+
+
+

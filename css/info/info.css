@@ -1,0 +1,121 @@
+.info{
+	background-color: var(--gray);
+	width: 100%;
+}
+
+@media screen and (max-width: 280px){
+	.info{
+		height: 1600px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.info{
+		max-height: 1400px;
+	}
+}
+
+
+.info__container{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 1136px;
+
+}
+
+@media screen and (min-width: 768px){
+	.info__container{
+		padding-top: 1rem;
+		gap: 2rem;
+	}
+}
+
+.info__box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+	.info__box{
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	.info__box{
+		align-items: center;
+	}
+}
+
+.info__picture{
+	background-image: url("../../images/star-wars/sw1.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 93vw;
+	height: 192px;
+}
+
+@media screen and (min-width: 768px){
+	.info__picture{
+		width: 35vw;
+	}
+}
+
+@media screen and (min-width: 820px){
+	.info__picture{
+		width: 38vw;
+	}
+}
+
+@media screen and (min-width: 920px){
+	.info__picture{
+		width: 40vw;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	.info__picture{
+		width: 50vw;
+		max-width: 560px;
+		height: 403px;
+	}
+}
+
+
+
+.info__texts{
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+@media screen and (min-width: 768px){
+	.info__texts{
+		width: 434px;
+	}
+}
+
+.info__title{
+	font-size: 1.375rem;
+	font-weight: 500;
+}
+
+@media screen and (min-width: 1440px){
+	.info__title{
+		font-size: 3.25rem;
+	}
+}
+
+
+.info__price{
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.info__paragraph{
+	font-size: 0.875rem;
+}

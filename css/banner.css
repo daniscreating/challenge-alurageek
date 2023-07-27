@@ -1,0 +1,69 @@
+.banner__div{
+	background-image: url("../images/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 13px -4px 116px 59px rgba(0,0,0,0.6) inset;
+
+	width: 100%;
+	height: 192px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 5rem 1rem 2rem 1rem;
+}
+
+@media screen and (min-width:768px){
+	.banner__div{
+		height: 352px;
+	}
+}
+
+
+.banner__h1{
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 2;
+	color: var(--white);
+}
+
+@media screen and (min-width: 768px){
+	.banner__h1{
+		font-size: 3.25rem;
+	}
+}
+
+
+.banner__paragraph{
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--white);
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px){
+	.banner__paragraph{
+		font-size: 1.375rem;
+	}
+}
+
+.banner__btn{
+	background-color: var(--blue);
+	border: none;	
+	width: 118px;
+	height: 40px;
+}
+
+.banner__btn a{
+	color: var(--white);
+}
+
+
+@media screen and (min-width: 1440px){
+	.banner__texts, .banner__button{
+		position: relative;
+		left: 10%;
+		width: 1136px;
+	}
+}
