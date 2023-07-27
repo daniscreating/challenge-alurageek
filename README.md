@@ -17,5 +17,5 @@ Una página de producto que contiene la imagen, el nombre, la descripción y el 
 - Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 - Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
 
-**Estado del proyecto**: _ _En progreso._ _
+**Estado del proyecto**: _En progreso._
  Agregar funcionalidades de javascript.
