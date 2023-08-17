@@ -3,249 +3,183 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alurageek</title>
-
-	<!-- Links a CSS y fuentes -->
+	<title>Alura Geek | Admin</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="./images/favicon.ico">
+	<link rel="icon" type="image/png" href="../images/favicon.ico">
 
-	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/banner.css">
-	<link rel="stylesheet" href="./css/catalogo.css">
-	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/catalogo.css">
+	<link rel="stylesheet" href="../css/products/products.css">
+	<link rel="stylesheet" href="../css/footer.css">
 
 </head>
-
-	
-
 <body>
-
-	<!-- Header -->
 
 	<header class="header">
 		<div class="logo__div">
-			<a href="index.html">
-				<img class="logo__img" src="./images/logo.svg"/>
+			<a href="../index.html">
+				<img class="logo__img" src="../images/logo.svg"/>
 			</a>
 			<input class="search__input" type="text" placeholder="¿Que deseas buscar?" data-buscador>
-			<img class="search__lupa" src="./images/icon-search.svg" alt="lupa">
+			<img class="search__lupa" src="../images/icon-search.svg" alt="lupa">
 		</div>
 
 		<div class="login__div">
-			<button class="login__button"><a href="./html/login.html">Login</a></button>
+			<button class="login__button"><a href="./login.html">Login</a></button>
 		</div>
 
 		<div class="search__div">
-			<img class="search__img-mobile" src="./images/icon-search.svg" />
+			<img class="search__img-mobile" src="../images/icon-search.svg" />
 		</div>
 
 	</header>
 
 	<main>
-
-	<!-- Banner -->
-
-	<section class="banner">
-		<div class="banner__div">
-			<div class="banner__texts">
-				<h1 class="banner__h1">
-						Febrero Promocional
-				</h1>
-				<p class="banner__paragraph">
-						Productos selecccionados con 33% de descuento
-				</p>
-			</div>
-			<div class="banner__button">
-					<button class="banner__btn"><a href="consolas.html">Ver Consolas</a></button>
-			</div>
-		</div>
-	</section>
-
-	<!-- Products -->
-	
-	<section class="section__catalogo">
-		<div class="catalogo container">
-
-			<div class="catalogo__type">
-				<div class="catalogo__head">
-					<div class="catalogo__head--text">
-						<h1 class="catalogo__title">Star Wars</h1>
-					</div>
-					<div class="catalogo__link">
-						<a href="./html/all-products.html" class="catalogo__more">Ver todo
-						<img class="catalogo__arrow" src="./images/arrow.svg" alt="#"></a>
-					</div>
+		<section class="products">
+			<div class="products container">
+				<div class="products__head">
+					<h2 class="products__title">Todos los productos</h2>
 				</div>
 
-				<div class="catalogo__content">
+				<div class="products__content">
 					<article class="product item1">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more" href="./html/info.html">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item2">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item3">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item4">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item5 hidden__mobile">
+					<article class="product item5">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item6 hidden__mobile">
+					<article class="product item6">
 						<div class="product__picture"></div>
 						<p class="product__title">Producto XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<a class="product__more">Ver producto</a>
+						<p class="product__code">#1111111</p>
 					</article>
-				</div>
-			</div>
 
-			<div class="catalogo__type">
-				<div class="catalogo__head">
-					<div class="catalogo__header--text">
-						<h1 class="catalogo__title">Consolas</h1>
-					</div>
-					<div class="catalogo__link">
-						<a href="./html/all-products.html" class="catalogo__more">Ver todo
-						<img class="catalogo__arrow" src="./images/arrow.svg" alt="#"></a>
-					</div>
-				</div>
-
-				<div class="catalogo__content">
 					<article class="product item7">
 						<div class="product__picture"></div>
 						<p class="product__title">Consola XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item8">
 						<div class="product__picture"></div>
 						<p class="product__title">Control XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item9">
 						<div class="product__picture"></div>
 						<p class="product__title">Control XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item10">
 						<div class="product__picture"></div>
 						<p class="product__title">Control XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item11 hidden__mobile">
+					<article class="product item11">
 						<div class="product__picture"></div>
 						<p class="product__title">Control XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item12 hidden__mobile">
+					<article class="product item12">
 						<div class="product__picture"></div>
 						<p class="product__title">Control XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
-			</div>
-			</div>
 
-			<div class="catalogo__type">
-				<div class="catalogo__head">
-					<div class="catalogo__head--text">
-						<h1 class="catalogo__title">Diversos</h1>
-					</div>
-					<div class="catalogo__link">
-						<a href="./html/all-products.html" class="catalogo__more">Ver todo
-						<img class="catalogo__arrow" src="./images/arrow.svg" alt="#"></a>
-					</div>
-				</div>
-
-				<div class="catalogo__content">
 					<article class="product item13">
 						<div class="product__picture"></div>
 						<p class="product__title">Camisa Atari</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item14">
 						<div class="product__picture"></div>
 						<p class="product__title">Camisa SNES</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item15">
 						<div class="product__picture"></div>
 						<p class="product__title">Control y consola XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
 					<article class="product item16">
 						<div class="product__picture"></div>
 						<p class="product__title">Control y consola XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item17 hidden__mobile">
+					<article class="product item17">
 						<div class="product__picture"></div>
 						<p class="product__title">Control y consola XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
 
-					<article class="product item18 hidden__mobile">
+					<article class="product item18">
 						<div class="product__picture"></div>
 						<p class="product__title">Control y consola XYZ</p>
 						<p class="product__price">R$ 60,00</p>
-						<p class="product__more">Ver producto</p>
+						<p class="product__code">#1111111</p>
 					</article>
-			</div>
-			</div>
+				</div>
 
-		</div>
-	</section>
-
+			</div>
+		</section>
 	</main>
 
 	<section class="section__footer">
 		<div class="footer__content">
 			<div class="footer__menu">
-				<a href="./index.html"><img src="./images/logo.svg" alt="" class="footer__logo"></a>
+				<a href="../index.html"><img src="../images/logo.svg" alt="" class="footer__logo"></a>
 				<ul class="footer__list">
 					<li class="footer__list--item"><a href="#">Quienes somos</a></li>
 					<li class="footer__list--item"><a href="#">Política de privacidad</a></li>
@@ -268,7 +202,7 @@
 							<label for="name" class="form__label">Mensaje</label>
 						</div>
 					</fieldset>
-					<button class="footer__btn"><a href="#">Enviar mensaje</a></button>
+					<button class="footer__btn"><a href="consolas.html">Enviar mensaje</a></button>
 				</form>
 			</div>
 		</div>
@@ -284,8 +218,6 @@
 				</p>
 		</div>
 	</footer>
-
-
-
+	
 </body>
 </html>
