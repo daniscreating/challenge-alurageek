@@ -49,10 +49,12 @@
 						<div class="input__container">
 							<input name="email" id="email" type="email" class="form__input" placeholder=" " maxlength="40"  data-tipo="email" required>
 							<label for="email" class="form__label">Escriba su correo electrónico</label>
+							<span class="input__message-error">Este campo no es valido</span>
 						</div>
 						<div class="input__container">
 							<input name="password" id="password" type="password" class="form__input" placeholder=" " data-tipo="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Al menos 8 caracteres, debe contener una letra minuscula, una letra mayuscula, un numero y un caracter especial">
 							<label for="password" class="form__label">Escriba su contraseña</label>
+							<span class="input__message-error">Este campo no es valido</span>
 						</div>
 					</fieldset>
 					<button class="login__btn">Entrar</button>
@@ -82,10 +84,12 @@
 						<div class="input__container">
 							<input name="name" id="name" type="text" class="form__input" placeholder=" " required maxlength="40" data-tipo="nombre">
 							<label for="name" class="form__label">Nombre</label>
+							<span class="input__message-error">Este campo no es valido</span>
 						</div>
 						<div class="input__container">
 							<textarea name="mensaje" id="mensaje" class="form__input" placeholder=" " rows="5" required minlength="10" maxlength="120" data-tipo="mensaje"></textarea>
 							<label for="name" class="form__label">Mensaje</label>
+							<span class="input__message-error">Este campo no es valido</span>
 						</div>
 					</fieldset>
 					<button class="footer__btn"><a href="consolas.html">Enviar mensaje</a></button>
@@ -106,6 +110,7 @@
 	</footer>
 
 
-	
+	<script type="module" src="../js/app.js"></script>
 </body>
+
 </html>

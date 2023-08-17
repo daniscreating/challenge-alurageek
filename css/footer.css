@@ -93,6 +93,30 @@
 	position: relative;
 }
 
+.input__container--invalid {
+	margin-bottom: 0.5rem;
+}
+
+.input__container--invalid .form__input {
+	border: 1px solid var(--warning-color);
+	border-radius: 7px;
+}
+
+.input__container--invalid .form__label {
+	color: var(--warning-color);
+} 
+
+.input__message-error {
+	display: none;
+}
+  
+.input__container--invalid .input__message-error {
+	color: var(--warning-color);
+	display: block;
+	padding-left: 0.5rem;
+}
+  
+
 
 .form__input{
     width: 100%;
