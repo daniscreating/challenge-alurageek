@@ -1,11 +1,7 @@
 export function valida(input) {
 	const tipoDeInput = input.dataset.tipo;
-
-	// if (validadores[tipoDeInput]) {
-	//   validadores[tipoDeInput](input);
-	// }
 	
-	if (input.validity.valid) {
+	if (input.validity.valid && input.checkValidity()) {
 		input.parentElement.classList.remove("input__container--invalid");
 		input.parentElement.querySelector(".input__message-error").innerHTML = " ";
 	} else {
@@ -21,9 +17,14 @@ const tipoDeErrores = [
 ];
 
 const mensajesDeError = {
+	// Validación sección Contacto
 	nombre: {
 		valueMissing: "El campo nombre no puede estar vacío",
 	},
+	mensaje: {
+        valueMissing: "El campo mensaje no puede estar vacío",
+    },
+	// Validación sección Login
 	email: {
 		valueMissing: "El campo correo no puede estar vacío",
 		typeMismatch: "El correo no es válido"
@@ -41,7 +42,7 @@ const validadores = {
 	// nacimiento: (input) => validarNacimiento(input),
 };
 
-function mostrarMensajeDeError(tipoDeInput, input){
+function mostrarMensajeDeError(tipoDeInput, input) {
 	let mensaje = "";
 	tipoDeErrores.forEach( error => {
 		if(input.validity[error]){
@@ -50,6 +51,9 @@ function mostrarMensajeDeError(tipoDeInput, input){
 			console.log(mensajesDeError[tipoDeInput][error]);
 			mensaje = mensajesDeError[tipoDeInput][error];
 		}
+		else if (!input.checkValidity() && input.type == "textarea" && input.value != "") {
+            mensaje = `El mensaje debe contener entre ${input.minLength} a 120 caracteres`;
+        }
 	});
 	return mensaje;
 }
