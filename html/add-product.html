@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - Login </title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../images/favicon.ico">
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/login/login.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/products/add-product.css">
+
+
+</head>
+
+
+<body>
+
+	<header class="header">
+		<div class="logo__div">
+			<a href="../index.html">
+				<img class="logo__img" src="../images/logo.svg"/>
+			</a>
+			<input class="search__input" type="text" placeholder="¿Que deseas buscar?" data-buscador>
+			<img class="search__lupa" src="../images/icon-search.svg" alt="lupa">
+		</div>
+
+		<div class="login__div">
+			<button class="login__button"><a href="login.html">Login</a></button>
+		</div>
+
+		<div class="search__div">
+			<img class="search__img-mobile" src="../images/icon-search.svg" />
+		</div>
+
+	</header>
+
+	<main>
+
+		<section class="add__product">
+			<div class="add__container">
+				<form class="add__form" action="./admin-products.html">
+					<fieldset>
+						<legend class="login__title">Agregar nuevo producto</legend>
+						<div class="input__container">
+							<input type="text" class="input" placeholder=" " required>
+							<label class="form__label">URL del producto</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+						<div class="input__container">
+							<input type="text" class="input" placeholder=" " required>
+							<label class="form__label">Nombre del producto</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+						<div class="input__container">
+							<input type="text" class="input" placeholder=" " required>
+							<label class="form__label">Categoría</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+						<div class="input__container">
+							<input type="text" class="input" placeholder=" " required>
+							<label class="form__label">Nombre del producto</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+						<div class="input__container">
+							<input type="text" class="input" placeholder=" " required>
+							<label class="form__label">Precio del producto</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+					</fieldset>
+					<button class="add__btn">Agregar Producto</button>
+				</form>
+			</div>
+		</section>
+
+	</main>
+
+	<section class="section__footer">
+		<div class="footer__content">
+			<div class="footer__menu">
+				<a href="../index.html"><img src="../images/logo.svg" alt="" class="footer__logo"></a>
+				<ul class="footer__list">
+					<li class="footer__list--item"><a href="#">Quienes somos</a></li>
+					<li class="footer__list--item"><a href="#">Política de privacidad</a></li>
+					<li class="footer__list--item"><a href="#">Programa de fidelidad</a></li>
+					<li class="footer__list--item"><a href="#">Nuestras tiendas</a></li>
+					<li class="footer__list--item"><a href="#">Quiero ser franquiciado</a></li>
+					<li class="footer__list--item"><a href="#">Anúncie aquí</a></li>
+				</ul>
+			</div>
+			<div class="footer__form">
+				<form>
+					<fieldset class="contact__form">
+						<legend class="form__title">Hable con nosotros</legend>
+						<div class="input__container">
+							<input name="name" id="name" type="text" class="input" placeholder=" " required maxlength="40" data-tipo="nombre">
+							<label for="name" class="form__label">Nombre</label>
+							<span class="input__message-error">Este campo no es valido</span>
+						</div>
+						<div class="input__container">
+							<textarea name="mensaje" id="mensaje" class="input" placeholder=" " rows="5" required minlength="10" maxlength="120" required data-tipo="mensaje"></textarea>
+							<label for="name" class="form__label">Mensaje</label>
+							<span class="input__message-error">El mensaje debe contener entre 10 a 120 caracteres</span>
+						</div>
+					</fieldset>
+					<button class="footer__btn"><a href="#">Enviar mensaje</a></button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer__rodapie">
+				<p class="footer__text">
+					Desarrollado por Daniela Rivera
+				</p>
+				<p class="footer__text">
+					2023
+				</p>
+		</div>
+	</footer>
+
+
+	<script type="module" src="../js/app.js"></script>
+</body>
+
+</html>
