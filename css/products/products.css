@@ -40,6 +40,7 @@
 	gap: 1rem;
 	grid-auto-rows: 16rem;
 	grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+	padding-bottom: 1rem;
 }
 
 .product__icons{
